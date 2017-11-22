@@ -1,0 +1,28 @@
+{
+  "name": "tdd-challenge",
+  "version": "1.0.0",
+  "description": "tdd bootcamp challenge",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register ./tests/tests.js"
+  },
+  "keywords": [
+    "tdd",
+    "jacascript"
+  ],
+  "author": "Uche Mukolo",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0"
+  }
+}
