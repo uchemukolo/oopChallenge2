@@ -9,8 +9,8 @@ class Employee {
     this.employeeType = '';
   }
 
-
-  employeeClockOut(id, name, thumbPrint) {
+// Abstraction and Encapsulation because it uses inheritance, methods, and properties to show model
+employeeClockOut(id, name, thumbPrint) {
     let list = this.attendanceList;
     for (let employee of list) {
       if (id === employee.id && thumbPrint === employee.thumbPrint) {
@@ -19,7 +19,7 @@ class Employee {
     }
   }
 
-
+// Abstraction and Encapsulation because it uses inheritance, methods, and properties to show model
   employeeClockIn(id, name, thumbPrint) {
     let list = this.attendanceList;
     for (let employee of list) {
@@ -38,18 +38,18 @@ class Employee {
   }
 }
 
-
-
-
-class Manager extends employee {
+//Inheritance because the class Manager inherits characteristics from the parent class Employee)
+class Manager extends Employee {
   constructor(id, thumbPrint, employeeType) {
     super(id, thumbPrint);
-    this.userType = 'manager';
+    this.employeeType = 'manager';
   }
 }
-class Associate extends employee {
+//Inheritance because the class Associate inherits characteristics from the parent class Employee)
+
+class Associate extends Employee {
   constructor(id, thumbPrint, employeeType) {
     super(id, thumbPrint);
-    this.userType = 'associate';
+    this.employeeType = 'associate';
   }
 }
